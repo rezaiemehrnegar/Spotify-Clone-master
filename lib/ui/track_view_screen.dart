@@ -62,7 +62,8 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                     CircleAvatar(
                                       radius: 15,
                                       backgroundImage: AssetImage(
-                                          'images/artists/Post-Malone.jpg'),
+                                        'images/artists/Post-Malone.jpg',
+                                      ),
                                     ),
                                     SizedBox(width: 15),
                                     Text(
@@ -132,7 +133,8 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                               AnimatedPadding(
                                 duration: const Duration(milliseconds: 200),
                                 padding: EdgeInsets.only(
-                                    top: (isSwitchedToNextTab) ? 50 : 0),
+                                  top: (isSwitchedToNextTab) ? 50 : 0,
+                                ),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -177,11 +179,11 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const SongControlScreen(
-                                                    trackName:
-                                                        "Enough is Enough",
-                                                    color: Color(0xff8b9a63),
-                                                    singer: "Post Malone",
-                                                    albumImage: "AUSTIN.jpg"),
+                                              trackName: "Enough is Enough",
+                                              color: Color(0xff8b9a63),
+                                              singer: "Post Malone",
+                                              albumImage: "AUSTIN.jpg",
+                                            ),
                                           ),
                                         );
                                       },
@@ -217,7 +219,8 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                   AnimatedPadding(
                                     duration: const Duration(milliseconds: 200),
                                     padding: EdgeInsets.only(
-                                        top: (isSwitchedToNextTab) ? 40 : 0),
+                                      top: (isSwitchedToNextTab) ? 40 : 0,
+                                    ),
                                     child: const PauseButton(
                                       iconWidth: 2.5,
                                       height: 40,
@@ -301,16 +304,19 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                           child: AnimatedPadding(
                             duration: const Duration(milliseconds: 200),
                             padding: EdgeInsets.only(
-                                left: (isSwitchedToNextTab) ? 50 : 0),
+                              left: (isSwitchedToNextTab) ? 50 : 0,
+                            ),
                             child: Column(
                               children: [
                                 SliderTheme(
                                   data: const SliderThemeData(
                                     trackHeight: 2,
                                     thumbShape: RoundSliderThumbShape(
-                                        enabledThumbRadius: 6.0),
+                                      enabledThumbRadius: 6.0,
+                                    ),
                                     overlayShape: RoundSliderOverlayShape(
-                                        overlayRadius: 0.0),
+                                      overlayRadius: 0.0,
+                                    ),
                                   ),
                                   child: AnimatedContainer(
                                     duration: const Duration(milliseconds: 200),
@@ -319,9 +325,17 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                       min: 0,
                                       max: 100,
                                       activeColor: const Color.fromARGB(
-                                          255, 230, 229, 229),
+                                        255,
+                                        230,
+                                        229,
+                                        229,
+                                      ),
                                       inactiveColor: const Color.fromARGB(
-                                          255, 148, 147, 147),
+                                        255,
+                                        148,
+                                        147,
+                                        147,
+                                      ),
                                       value: _currentNumber,
                                       onChanged: (onChanged) {
                                         setState(() {
@@ -345,7 +359,11 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                             fontFamily: "AM",
                                             fontSize: 12,
                                             color: Color.fromARGB(
-                                                255, 230, 229, 229),
+                                              255,
+                                              230,
+                                              229,
+                                              229,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -357,7 +375,11 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                                             fontFamily: "AM",
                                             fontSize: 12,
                                             color: Color.fromARGB(
-                                                255, 230, 229, 229),
+                                              255,
+                                              230,
+                                              229,
+                                              229,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -430,18 +452,20 @@ class _TrackViewScreenState extends State<TrackViewScreen> {
                             (!isOnPlaying) ? Colors.white : Colors.transparent,
                       ),
                       child: Center(
-                          child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 20),
-                        child: Text(
-                          "Lyrics",
-                          style: TextStyle(
-                            fontFamily: "AM",
-                            fontSize: 16,
-                            fontWeight: FontWeight.w700,
-                            color: (!isOnPlaying) ? Colors.black : Colors.white,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          child: Text(
+                            "Lyrics",
+                            style: TextStyle(
+                              fontFamily: "AM",
+                              fontSize: 16,
+                              fontWeight: FontWeight.w700,
+                              color:
+                                  (!isOnPlaying) ? Colors.black : Colors.white,
+                            ),
                           ),
                         ),
-                      )),
+                      ),
                     ),
                   ),
                 ],

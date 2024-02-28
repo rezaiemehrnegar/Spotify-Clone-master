@@ -73,7 +73,7 @@ class _ActionButtons extends StatelessWidget {
               );
             },
             child: const Text(
-             'Sign up free',
+              'Sign up free',
               style: TextStyle(
                 fontFamily: "AB",
                 fontSize: 16,
@@ -137,7 +137,9 @@ class _ActionButtons extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset("images/icon_facebook.png"),
+                Image.asset(
+                  "images/icon_facebook.png",
+                ),
                 const Text(
                   "Continiue with Facebook",
                   style: TextStyle(
@@ -158,7 +160,10 @@ class _ActionButtons extends StatelessWidget {
           ),
           OutlinedButton(
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(MediaQuery.of(context).size.width, 49),
+              minimumSize: Size(
+                MediaQuery.of(context).size.width,
+                49,
+              ),
               shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(
                   Radius.circular(25),
@@ -189,9 +194,7 @@ class _ActionButtons extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(
-            height: 15,
-          ),
+          const SizedBox(height: 15),
           const Text(
             "Log in",
             style: TextStyle(

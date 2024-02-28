@@ -3,12 +3,13 @@ import 'package:spotify_clone/constants/constants.dart';
 import 'package:spotify_clone/ui/share_song_screen.dart';
 
 class SongControlScreen extends StatelessWidget {
-  const SongControlScreen(
-      {super.key,
-      required this.trackName,
-      required this.color,
-      required this.singer,
-      required this.albumImage});
+  const SongControlScreen({
+    super.key,
+    required this.trackName,
+    required this.color,
+    required this.singer,
+    required this.albumImage,
+  });
   final String albumImage;
   final String trackName;
   final Color color;
@@ -58,14 +59,22 @@ class SongControlScreen extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 25),
                 child: Column(
                   children: [
-                    const _AlbumChip(text: "Like", image: "icon_heart.png"),
                     const _AlbumChip(
-                        text: "Hide song", image: "icon_hide_song.png"),
+                      text: "Like",
+                      image: "icon_heart.png",
+                    ),
                     const _AlbumChip(
-                        text: "Add to playlist",
-                        image: "icon_add_to_playlist.png"),
+                      text: "Hide song",
+                      image: "icon_hide_song.png",
+                    ),
                     const _AlbumChip(
-                        text: "Add to queue", image: "icon_add_to_quoue.png"),
+                      text: "Add to playlist",
+                      image: "icon_add_to_playlist.png",
+                    ),
+                    const _AlbumChip(
+                      text: "Add to queue",
+                      image: "icon_add_to_quoue.png",
+                    ),
                     GestureDetector(
                       onTap: () {
                         Navigator.push(
@@ -76,16 +85,26 @@ class SongControlScreen extends StatelessWidget {
                         );
                       },
                       child: const _AlbumChip(
-                          text: "Share", image: "icon_share.png"),
+                        text: "Share",
+                        image: "icon_share.png",
+                      ),
                     ),
                     const _AlbumChip(
-                        text: "Go to radio", image: "icon_radio.png"),
+                      text: "Go to radio",
+                      image: "icon_radio.png",
+                    ),
                     const _AlbumChip(
-                        text: "View album", image: "icon_album.png"),
+                      text: "View album",
+                      image: "icon_album.png",
+                    ),
                     const _AlbumChip(
-                        text: "View artist", image: "icon_view_artist.png"),
+                      text: "View artist",
+                      image: "icon_view_artist.png",
+                    ),
                     const _AlbumChip(
-                        text: "Song credits", image: "icon_song_credits.png"),
+                      text: "Song credits",
+                      image: "icon_song_credits.png",
+                    ),
                     const _AlbumChip(
                         text: "Sleep timer", image: "icon_sleep_timer.png"),
                     const SizedBox(height: 30),
@@ -117,7 +136,10 @@ class SongControlScreen extends StatelessWidget {
 }
 
 class _AlbumChip extends StatelessWidget {
-  const _AlbumChip({required this.text, required this.image});
+  const _AlbumChip({
+    required this.text,
+    required this.image,
+  });
   final String text;
   final String image;
 
@@ -145,10 +167,11 @@ class _AlbumChip extends StatelessWidget {
 }
 
 class _SongHeader extends StatelessWidget {
-  const _SongHeader(
-      {required this.trackName,
-      required this.albumImage,
-      required this.singer});
+  const _SongHeader({
+    required this.trackName,
+    required this.albumImage,
+    required this.singer,
+  });
   final String albumImage;
   final String trackName;
   final String singer;

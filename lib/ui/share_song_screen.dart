@@ -40,7 +40,7 @@ class ShareSongScreen extends StatelessWidget {
                   color: MyColors.blackColor,
                 ),
               ),
-              child: Image.asset("images/social_links.png"),
+              child: Image.asset("images/social_links.png",),
             ),
           ),
         ],
@@ -68,8 +68,11 @@ class _SongInfo extends StatelessWidget {
                 onTap: () {
                   Navigator.pop(context);
                 },
-                child:
-                    Image.asset("images/icon_back.png", height: 15, width: 15),
+                child: Image.asset(
+                  "images/icon_back.png",
+                  height: 15,
+                  width: 15,
+                ),
               ),
               const Text(
                 "Share",
