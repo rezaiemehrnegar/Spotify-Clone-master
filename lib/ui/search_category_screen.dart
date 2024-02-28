@@ -137,7 +137,9 @@ class _SearchCategoryScreenState extends State<SearchCategoryScreen> {
                           ],
                         ),
                         const _ImageContainer(
-                            title: "Comdey", image: "comedy.png"),
+                          title: "Comdey",
+                          image: "comedy.png",
+                        ),
                       ],
                     ),
                   ),
@@ -160,9 +162,13 @@ class _SearchCategoryScreenState extends State<SearchCategoryScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         _ImageContainer(
-                            title: "2023 Wrapped", image: "2023_wrapped.png"),
+                          title: "2023 Wrapped",
+                          image: "2023_wrapped.png",
+                        ),
                         _ImageContainer(
-                            title: "Podcasts", image: "podcasts.png"),
+                          title: "Podcasts",
+                          image: "podcasts.png",
+                        ),
                       ],
                     ),
                   ),
@@ -173,8 +179,13 @@ class _SearchCategoryScreenState extends State<SearchCategoryScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           _ImageContainer(
-                              title: "Made for you", image: "made_for_you.png"),
-                          _ImageContainer(title: "Charts", image: "charts.png"),
+                            title: "Made for you",
+                            image: "made_for_you.png",
+                          ),
+                          _ImageContainer(
+                            title: "Charts",
+                            image: "charts.png",
+                          ),
                         ],
                       ),
                     ),
@@ -240,7 +251,9 @@ class _SearchBox extends StatelessWidget {
             },
             child: Row(
               children: [
-                Image.asset("images/icon_search_black.png"),
+                Image.asset(
+                  "images/icon_search_black.png",
+                ),
                 const SizedBox(width: 15),
                 const Text(
                   "What do you want to listen to?",
@@ -260,7 +273,10 @@ class _SearchBox extends StatelessWidget {
 }
 
 class _ImageContainer extends StatelessWidget {
-  const _ImageContainer({required this.title, required this.image});
+  const _ImageContainer({
+    required this.title,
+    required this.image,
+  });
   final String title;
   final String image;
 
@@ -273,7 +289,9 @@ class _ImageContainer extends StatelessWidget {
           width: (MediaQuery.of(context).size.width / 1.75) - 50,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("images/$image"),
+              image: AssetImage(
+                "images/$image",
+              ),
               fit: BoxFit.cover,
             ),
             color: Colors.red,

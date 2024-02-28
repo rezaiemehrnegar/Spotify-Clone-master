@@ -27,7 +27,9 @@ class SettingScreen extends StatelessWidget {
           onTap: () {
             Navigator.pop(context);
           },
-          child: Image.asset("images/icon_arrow_left.png"),
+          child: Image.asset(
+            "images/icon_arrow_left.png",
+          ),
         ),
       ),
       body: const Stack(
@@ -79,7 +81,9 @@ class _SettingsOptionChip extends StatelessWidget {
                 color: MyColors.whiteColor,
               ),
             ),
-            Image.asset("images/icon_arrow_right.png"),
+            Image.asset(
+              "images/icon_arrow_right.png",
+            ),
           ],
         ),
       ),
@@ -120,7 +124,9 @@ class _ProfileSection extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 27,
-                      backgroundImage: AssetImage("images/myImage.png"),
+                      backgroundImage: AssetImage(
+                        "images/myImage.png",
+                      ),
                     ),
                     SizedBox(
                       width: 10,
@@ -150,7 +156,9 @@ class _ProfileSection extends StatelessWidget {
                   ],
                 ),
               ),
-              Image.asset("images/icon_arrow_right.png"),
+              Image.asset(
+                "images/icon_arrow_right.png",
+              ),
             ],
           ),
         ),

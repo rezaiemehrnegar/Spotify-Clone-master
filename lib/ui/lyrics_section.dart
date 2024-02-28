@@ -114,7 +114,9 @@ class _LyricsSection extends StatelessWidget {
                       const SizedBox(
                         width: 8,
                       ),
-                      Image.asset("images/icon_bigger_size.png"),
+                      Image.asset(
+                        "images/icon_bigger_size.png",
+                      ),
                     ],
                   ),
                 ),
@@ -133,7 +135,9 @@ class _LyricsSection extends StatelessWidget {
                     Radius.circular(15),
                   ),
                   border: Border.all(
-                      color: Colors.white.withOpacity(0.5), width: 1),
+                    color: Colors.white.withOpacity(0.5),
+                    width: 1,
+                  ),
                 ),
                 child: Center(
                   child: Padding(
@@ -145,9 +149,7 @@ class _LyricsSection extends StatelessWidget {
                           height: 10,
                           width: 10,
                         ),
-                        const SizedBox(
-                          width: 5,
-                        ),
+                        const SizedBox(width: 5),
                         const Text(
                           "ShARE",
                           style: TextStyle(

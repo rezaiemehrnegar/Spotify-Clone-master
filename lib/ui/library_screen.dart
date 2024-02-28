@@ -48,8 +48,9 @@ class LibraryScreen extends StatelessWidget {
                               children: [
                                 CircleAvatar(
                                   radius: 20,
-                                  backgroundImage:
-                                      AssetImage("images/myImage.png"),
+                                  backgroundImage: AssetImage(
+                                    "images/myImage.png",
+                                  ),
                                 ),
                                 SizedBox(width: 10),
                                 Text(
@@ -72,7 +73,9 @@ class LibraryScreen extends StatelessWidget {
                                 ),
                               );
                             },
-                            child: Image.asset("images/icon_add.png"),
+                            child: Image.asset(
+                              "images/icon_add.png",
+                            ),
                           ),
                         ],
                       ),
@@ -117,7 +120,9 @@ class LibraryScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Image.asset("images/icon_category.png"),
+                          Image.asset(
+                            "images/icon_category.png",
+                          ),
                         ],
                       ),
                     ),
@@ -133,7 +138,9 @@ class LibraryScreen extends StatelessWidget {
                             builder: (context) => BlocProvider(
                               create: (context) {
                                 var bloc = AlbumBloc(locator.get());
-                                bloc.add(AlbumListEvent("Drake"));
+                                bloc.add(
+                                  AlbumListEvent("Drake"),
+                                );
                                 return bloc;
                               },
                               child: const AlbumViewScreen(),
@@ -178,7 +185,9 @@ class LibraryScreen extends StatelessWidget {
                             builder: (context) => BlocProvider(
                               create: (context) {
                                 var bloc = AlbumBloc(locator.get());
-                                bloc.add(AlbumListEvent("21 Savage"));
+                                bloc.add(
+                                  AlbumListEvent("21 Savage"),
+                                );
                                 return bloc;
                               },
                               child: const AlbumViewScreen(),
@@ -238,8 +247,12 @@ class _NewEpisodesSection extends StatelessWidget {
             Stack(
               alignment: AlignmentDirectional.center,
               children: [
-                Image.asset("images/new_episods.png"),
-                Image.asset("images/icon_bell_fill.png"),
+                Image.asset(
+                  "images/new_episods.png",
+                ),
+                Image.asset(
+                  "images/icon_bell_fill.png",
+                ),
               ],
             ),
             const SizedBox(
@@ -257,9 +270,7 @@ class _NewEpisodesSection extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                const SizedBox(
-                  height: 2,
-                ),
+                const SizedBox(height: 2),
                 Row(
                   children: [
                     Image.asset("images/icon_pin.png"),
@@ -296,13 +307,15 @@ class _LikedSongsSection extends StatelessWidget {
             Stack(
               alignment: AlignmentDirectional.center,
               children: [
-                Image.asset("images/liked_songs.png"),
-                Image.asset("images/icon_heart_white.png"),
+                Image.asset(
+                  "images/liked_songs.png",
+                ),
+                Image.asset(
+                  "images/icon_heart_white.png",
+                ),
               ],
             ),
-            const SizedBox(
-              width: 10,
-            ),
+            const SizedBox(width: 10),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -315,9 +328,7 @@ class _LikedSongsSection extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                const SizedBox(
-                  height: 2,
-                ),
+                const SizedBox(height: 2),
                 Row(
                   children: [
                     Image.asset("images/icon_pin.png"),

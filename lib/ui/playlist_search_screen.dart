@@ -39,7 +39,9 @@ class PlaylistSearchScreen extends StatelessWidget {
                           _Header(
                             cover: cover,
                           ),
-                          _PlaylistActionButtons(time: state.playlist.time),
+                          _PlaylistActionButtons(
+                            time: state.playlist.time,
+                          ),
                           _SongList(state: state),
                           const SliverPadding(
                             padding: EdgeInsets.only(bottom: 50),
@@ -91,7 +93,8 @@ class _SongList extends StatelessWidget {
                         height: 48,
                         width: 48,
                         child: Image.asset(
-                            'images/${state.playlist.tracks[index].image}'),
+                          'images/${state.playlist.tracks[index].image}',
+                        ),
                       ),
                       const SizedBox(width: 5),
                       Column(
@@ -155,9 +158,7 @@ class _PlaylistActionButtonsState extends State<_PlaylistActionButtons> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
               const Text(
                 "New and approved indie pop. CoverL No Rome",
                 style: TextStyle(
@@ -166,9 +167,7 @@ class _PlaylistActionButtonsState extends State<_PlaylistActionButtons> {
                   color: MyColors.lightGrey,
                 ),
               ),
-              const SizedBox(
-                height: 5,
-              ),
+              const SizedBox(height: 5),
               Row(
                 children: [
                   Image.asset('images/icon_spotify.png'),
@@ -184,9 +183,7 @@ class _PlaylistActionButtonsState extends State<_PlaylistActionButtons> {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 10,
-              ),
+              const SizedBox(height: 10),
               Text(
                 "1,629,592 likes . ${widget.time}",
                 style: const TextStyle(
@@ -311,9 +308,7 @@ class _Header extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(
-            height: 10,
-          ),
+          const SizedBox(height: 10),
           Center(
             child: Image.asset(
               'images/home/$cover',

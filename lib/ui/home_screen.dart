@@ -85,7 +85,9 @@ class _RecentPlays extends StatelessWidget {
                           builder: (context) => BlocProvider(
                             create: (context) {
                               var bloc = PlaylistBloc(locator.get());
-                              bloc.add(PlaylistFetchEvent("Upbeat"));
+                              bloc.add(
+                                PlaylistFetchEvent("Upbeat"),
+                              );
                               return bloc;
                             },
                             child: const PlaylistSearchScreen(
@@ -101,11 +103,11 @@ class _RecentPlays extends StatelessWidget {
                         SizedBox(
                           height: 133,
                           width: 133,
-                          child: Image.asset("images/home/Upbeat-Mix.jpg"),
+                          child: Image.asset(
+                            "images/home/Upbeat-Mix.jpg",
+                          ),
                         ),
-                        const SizedBox(
-                          height: 12,
-                        ),
+                        const SizedBox(height: 12),
                         const Text(
                           "Upbeat Mix",
                           style: TextStyle(
@@ -124,7 +126,9 @@ class _RecentPlays extends StatelessWidget {
                       SizedBox(
                         height: 133,
                         width: 133,
-                        child: Image.asset("images/home/Daily-Mix-1.jpg"),
+                        child: Image.asset(
+                          "images/home/Daily-Mix-1.jpg",
+                        ),
                       ),
                       const SizedBox(
                         height: 12,
@@ -149,7 +153,9 @@ class _RecentPlays extends StatelessWidget {
                             create: (context) {
                               var bloc = AlbumBloc(locator.get());
                               bloc.add(
-                                AlbumListEvent("Travis Scott"),
+                                AlbumListEvent(
+                                  "Travis Scott",
+                                ),
                               );
                               return bloc;
                             },
@@ -164,11 +170,11 @@ class _RecentPlays extends StatelessWidget {
                         SizedBox(
                           height: 133,
                           width: 133,
-                          child: Image.asset("images/home/UTOPIA.jpg"),
+                          child: Image.asset(
+                            "images/home/UTOPIA.jpg",
+                          ),
                         ),
-                        const SizedBox(
-                          height: 12,
-                        ),
+                        const SizedBox(height: 12),
                         const Text(
                           "UTOPIA",
                           style: TextStyle(
@@ -203,11 +209,11 @@ class _RecentPlays extends StatelessWidget {
                         SizedBox(
                           height: 133,
                           width: 133,
-                          child: Image.asset("images/home/american-dream.jpg"),
+                          child: Image.asset(
+                            "images/home/american-dream.jpg",
+                          ),
                         ),
-                        const SizedBox(
-                          height: 12,
-                        ),
+                        const SizedBox(height: 12),
                         const Text(
                           "american dream",
                           style: TextStyle(
@@ -226,7 +232,9 @@ class _RecentPlays extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         radius: 65,
-                        backgroundImage: AssetImage("images/artists/JID.jpg"),
+                        backgroundImage: AssetImage(
+                          "images/artists/JID.jpg",
+                        ),
                       ),
                       SizedBox(
                         height: 12,
@@ -272,9 +280,7 @@ class _JumpBackin extends StatelessWidget {
                 fontSize: 24,
               ),
             ),
-            const SizedBox(
-              height: 15,
-            ),
+            const SizedBox(height: 15),
             SizedBox(
               height: 199,
               child: ListView(
@@ -284,9 +290,7 @@ class _JumpBackin extends StatelessWidget {
                     subtitle: "Future, Jack Harllow, Drake and more",
                     image: "Rap-Workout.jpg",
                   ),
-                  const SizedBox(
-                    width: 15,
-                  ),
+                  const SizedBox(width: 15),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -310,9 +314,7 @@ class _JumpBackin extends StatelessWidget {
                       image: 'Daily-Mix-1.jpg',
                     ),
                   ),
-                  const SizedBox(
-                    width: 15,
-                  ),
+                  const SizedBox(width: 15),
                   const Column(
                     children: [
                       CircleAvatar(
@@ -320,9 +322,7 @@ class _JumpBackin extends StatelessWidget {
                         backgroundImage:
                             AssetImage("images/artists/Kendrick-Lamar.jpg"),
                       ),
-                      SizedBox(
-                        height: 12,
-                      ),
+                      SizedBox(height: 12),
                       Text(
                         "Kendrick Lamar",
                         style: TextStyle(
@@ -333,9 +333,7 @@ class _JumpBackin extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(
-                    width: 15,
-                  ),
+                  const SizedBox(width: 15),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -344,7 +342,9 @@ class _JumpBackin extends StatelessWidget {
                           builder: (context) => BlocProvider(
                             create: (context) {
                               var bloc = AlbumBloc(locator.get());
-                              bloc.add(AlbumListEvent("Travis Scott"));
+                              bloc.add(
+                                AlbumListEvent("Travis Scott"),
+                              );
                               return bloc;
                             },
                             child: const AlbumViewScreen(),
@@ -360,9 +360,7 @@ class _JumpBackin extends StatelessWidget {
                           width: 153,
                           child: Image.asset("images/home/UTOPIA.jpg"),
                         ),
-                        const SizedBox(
-                          height: 10,
-                        ),
+                        const SizedBox(height: 10),
                         const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -387,9 +385,7 @@ class _JumpBackin extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    width: 15,
-                  ),
+                  const SizedBox(width: 15),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -412,12 +408,11 @@ class _JumpBackin extends StatelessWidget {
                         SizedBox(
                           height: 153,
                           width: 153,
-                          child:
-                              Image.asset("images/home/For-All-The-Dogs.jpg"),
+                          child: Image.asset(
+                            "images/home/For-All-The-Dogs.jpg",
+                          ),
                         ),
-                        const SizedBox(
-                          height: 10,
-                        ),
+                        const SizedBox(height: 10),
                         const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -471,9 +466,7 @@ class _TopMixes extends StatelessWidget {
                 fontSize: 24,
               ),
             ),
-            const SizedBox(
-              height: 15,
-            ),
+            const SizedBox(height: 15),
             SizedBox(
               height: 199,
               child: ListView(
@@ -487,7 +480,9 @@ class _TopMixes extends StatelessWidget {
                           builder: (context) => BlocProvider(
                             create: (context) {
                               var bloc = PlaylistBloc(locator.get());
-                              bloc.add(PlaylistFetchEvent('2010'));
+                              bloc.add(
+                                PlaylistFetchEvent('2010'),
+                              );
                               return bloc;
                             },
                             child: const PlaylistSearchScreen(
@@ -502,9 +497,7 @@ class _TopMixes extends StatelessWidget {
                       image: "2010s-mix.png",
                     ),
                   ),
-                  const SizedBox(
-                    width: 15,
-                  ),
+                  const SizedBox(width: 15),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -513,11 +506,14 @@ class _TopMixes extends StatelessWidget {
                           builder: (context) => BlocProvider(
                             create: (context) {
                               var bloc = PlaylistBloc(locator.get());
-                              bloc.add(PlaylistFetchEvent("Chill"));
+                              bloc.add(
+                                PlaylistFetchEvent("Chill"),
+                              );
                               return bloc;
                             },
                             child: const PlaylistSearchScreen(
-                                cover: "chill-mix.png"),
+                              cover: "chill-mix.png",
+                            ),
                           ),
                         ),
                       );
@@ -527,9 +523,7 @@ class _TopMixes extends StatelessWidget {
                       image: 'chill-mix.png',
                     ),
                   ),
-                  const SizedBox(
-                    width: 15,
-                  ),
+                  const SizedBox(width: 15),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -553,16 +547,12 @@ class _TopMixes extends StatelessWidget {
                       image: 'Upbeat-Mix.jpg',
                     ),
                   ),
-                  const SizedBox(
-                    width: 15,
-                  ),
+                  const SizedBox(width: 15),
                   const _MixChip(
                     subtitle: "Baby keem, Travis Scott and Drake",
                     image: "Offset-Mix.jpg",
                   ),
-                  const SizedBox(
-                    width: 15,
-                  ),
+                  const SizedBox(width: 15),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -613,7 +603,9 @@ class _Header extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 20,
-                      backgroundImage: AssetImage("images/myImage.png"),
+                      backgroundImage: AssetImage(
+                        "images/myImage.png",
+                      ),
                     ),
                     SizedBox(width: 12),
                     Text(
@@ -649,9 +641,7 @@ class _Header extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             Row(
               children: [
                 Container(
@@ -701,9 +691,7 @@ class _Header extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             Column(
               children: [
                 Row(
@@ -746,9 +734,7 @@ class _Header extends StatelessWidget {
                               ),
                             ],
                           ),
-                          const SizedBox(
-                            width: 10,
-                          ),
+                          const SizedBox(width: 10),
                           const Text(
                             "Liked Songs",
                             style: TextStyle(
@@ -778,7 +764,9 @@ class _Header extends StatelessWidget {
                             builder: (context) => BlocProvider(
                               create: (context) {
                                 var bloc = AlbumBloc(locator.get());
-                                bloc.add(AlbumListEvent("21 Savage"));
+                                bloc.add(
+                                  AlbumListEvent("21 Savage"),
+                                );
                                 return bloc;
                               },
                               child: const AlbumViewScreen(),
@@ -799,7 +787,9 @@ class _Header extends StatelessWidget {
                             builder: (context) => BlocProvider(
                               create: (context) {
                                 var bloc = AlbumBloc(locator.get());
-                                bloc.add(AlbumListEvent("Travis Scott"));
+                                bloc.add(
+                                  AlbumListEvent("Travis Scott"),
+                                );
                                 return bloc;
                               },
                               child: const AlbumViewScreen(),
@@ -826,7 +816,9 @@ class _Header extends StatelessWidget {
                             builder: (context) => BlocProvider(
                               create: (context) {
                                 var bloc = PlaylistBloc(locator.get());
-                                bloc.add(PlaylistFetchEvent("Upbeat"));
+                                bloc.add(
+                                  PlaylistFetchEvent("Upbeat"),
+                                );
                                 return bloc;
                               },
                               child: const PlaylistSearchScreen(
@@ -889,9 +881,7 @@ class _RecentPlaysChip extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-            width: 10,
-          ),
+          const SizedBox(width: 10),
           AutoSizeText(
             title,
             style: const TextStyle(
@@ -919,7 +909,9 @@ class _MixChip extends StatelessWidget {
         SizedBox(
           height: 153,
           width: 153,
-          child: Image.asset("images/home/$image"),
+          child: Image.asset(
+            "images/home/$image",
+          ),
         ),
         const SizedBox(
           height: 10,

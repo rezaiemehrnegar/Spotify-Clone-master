@@ -24,8 +24,9 @@ class ScanSpotifyCodeScreen extends StatelessWidget {
                 decoration: const BoxDecoration(
                   color: MyColors.darGreyColor,
                   borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(15),
-                      topRight: Radius.circular(15)),
+                    topLeft: Radius.circular(15),
+                    topRight: Radius.circular(15),
+                  ),
                 ),
               ),
               const SizedBox(

@@ -65,17 +65,11 @@ class _ProfilePlaylists extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        const SizedBox(
-          height: 10,
-        ),
+        const SizedBox(height: 10),
         Image.asset("images/shazam_playlist.png"),
-        const SizedBox(
-          height: 5,
-        ),
+        const SizedBox(height: 5),
         Image.asset("images/roadtrip_playlist.png"),
-        const SizedBox(
-          height: 5,
-        ),
+        const SizedBox(height: 5),
         Image.asset("images/study_playlist.png"),
         Padding(
           padding: const EdgeInsets.symmetric(
@@ -93,7 +87,9 @@ class _ProfilePlaylists extends StatelessWidget {
                   color: MyColors.whiteColor,
                 ),
               ),
-              Image.asset("images/icon_arrow_right.png"),
+              Image.asset(
+                "images/icon_arrow_right.png",
+              ),
             ],
           ),
         ),
@@ -122,7 +118,9 @@ class _ProfileHeader extends StatelessWidget {
                 onTap: () {
                   Navigator.pop(context);
                 },
-                child: Image.asset("images/icon_arrow_left.png"),
+                child: Image.asset(
+                  "images/icon_arrow_left.png",
+                ),
               ),
               Image.asset(
                 "images/icon_more.png",
@@ -138,7 +136,9 @@ class _ProfileHeader extends StatelessWidget {
               children: [
                 const CircleAvatar(
                   radius: 55,
-                  backgroundImage: AssetImage("images/myImage.png"),
+                  backgroundImage: AssetImage(
+                    "images/myImage.png",
+                  ),
                 ),
                 const SizedBox(
                   height: 35,

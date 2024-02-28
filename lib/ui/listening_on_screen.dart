@@ -163,7 +163,9 @@ class _ListeningOnState extends State<ListeningOn> {
                 const Center(
                   child: CircleAvatar(
                     radius: 25,
-                    backgroundImage: AssetImage("images/myImage.png"),
+                    backgroundImage: AssetImage(
+                      "images/myImage.png",
+                    ),
                   ),
                 ),
                 const SizedBox(
@@ -268,9 +270,7 @@ class _SelectDeviceSection extends StatelessWidget {
             color: MyColors.whiteColor,
           ),
         ),
-        const SizedBox(
-          height: 20,
-        ),
+        const SizedBox(height: 20),
         Row(
           children: [
             Image.asset('images/icon_monitor.png'),
@@ -304,9 +304,7 @@ class _SelectDeviceSection extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(
-          height: 30,
-        ),
+        const SizedBox(height: 30),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -328,9 +326,7 @@ class _SelectDeviceSection extends StatelessWidget {
             Image.asset('images/icon_more.png'),
           ],
         ),
-        const SizedBox(
-          height: 30,
-        ),
+        const SizedBox(height: 30),
         Row(
           children: [
             Image.asset('images/icon_airplay.png'),

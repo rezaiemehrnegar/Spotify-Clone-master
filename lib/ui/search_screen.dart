@@ -46,7 +46,9 @@ class SearchScreen extends StatelessWidget {
                         builder: (context) => BlocProvider(
                           create: (cotnext) {
                             var bloc = AlbumBloc(locator.get());
-                            bloc.add(AlbumListEvent("Post Malone"));
+                            bloc.add(
+                              AlbumListEvent("Post Malone"),
+                            );
                             return bloc;
                           },
                           child: const AlbumViewScreen(),
@@ -97,7 +99,9 @@ class SearchScreen extends StatelessWidget {
                         builder: (context) => BlocProvider(
                           create: (context) {
                             var bloc = AlbumBloc(locator.get());
-                            bloc.add(AlbumListEvent("21 Savage"));
+                            bloc.add(
+                              AlbumListEvent("21 Savage"),
+                            );
                             return bloc;
                           },
                           child: const AlbumViewScreen(),
@@ -205,7 +209,10 @@ class _SearchBox extends StatelessWidget {
               child: const Text(
                 "Cancel",
                 style: TextStyle(
-                    fontFamily: "AM", color: MyColors.whiteColor, fontSize: 15),
+                  fontFamily: "AM",
+                  color: MyColors.whiteColor,
+                  fontSize: 15,
+                ),
               ),
             ),
           ],
